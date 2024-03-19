@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans:ital@0;1&display=swap');
+
+body {
+    background: rgb(210, 155, 11);
+    background: linear-gradient(130deg, rgba(210, 155, 11,1) 0%, rgba(255, 215, 0, 0.7) 100%);
+    font-family: "Inter", sans-serif;
+}
+
+span,
+.active {
+  @apply bg-gradient-to-b from-[color:gold] to-[color:#ffd700] bg-clip-text font-bold text-transparent;
+}
+
+
+.bg-primary-color {
+    @apply bg-gradient-to-br from-[#d29b0b] to-[#ffd700];
+}
+
+.active {
+    @apply font-bold ;
+}
+
+.gray-primary-color {
+  @apply bg-gradient-to-b from-white to-yellow-400 bg-clip-text font-bold text-transparent;
+}
