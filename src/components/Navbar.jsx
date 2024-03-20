@@ -24,13 +24,13 @@ const Navbar = () => {
             <NavLink to="/" activeClassName="selected">Home</NavLink>
           </li>
           <li className="p-2">
-            <NavLink to="/about" activeClassName="text-black">About</NavLink>
+            <NavLink to="/about" activeClassName="text-white">About</NavLink>
           </li>
           <li className="p-2">
-            <NavLink to="/portfolio" activeClassName="text-black">Portfolio</NavLink>
+            <NavLink to="/portfolio" activeClassName="text-white">Portfolio</NavLink>
           </li>
           <li className="p-2">
-            <NavLink to="/contact" activeClassName="text-black">Contact</NavLink>
+            <NavLink to="/contact" activeClassName="text-white">Contact</NavLink>
           </li>
         </ul>
 
@@ -42,7 +42,7 @@ const Navbar = () => {
         {/* Mobile navigation (unchanged) */}
         <div className={nav ? 'z-30 text-gray-300 fixed h-[50%] left-0 top-0 w-full bg-[#202121] ease-in-out duration-500'
           : 'fixed left-[-100%]'}>
-            <div className='text-3xl gray-primary-color m-4'>
+            <div className='bg-[#ffd700b2]'>
                         <img className='' src={logo} alt="logo" />
  
             </div>
@@ -51,13 +51,13 @@ const Navbar = () => {
               <NavLink to="/" activeClassName="selected">Home</NavLink>
             </li>
             <li className="p-2">
-              <NavLink to="/about" activeClassName="text-black">About</NavLink>
+              <NavLink to="/about" activeClassName="text-white">About</NavLink>
             </li>
             <li className="p-2">
-              <NavLink to="/portfolio" activeClassName="text-black">Portfolio</NavLink>
+              <NavLink to="/portfolio" activeClassName="text-white">Portfolio</NavLink>
             </li>
             <li className="p-2">
-              <NavLink to="/contact" activeClassName="text-black">Contact</NavLink>
+              <NavLink to="/contact" activeClassName="text-white">Contact</NavLink>
             </li>
           </ul>
         </div>

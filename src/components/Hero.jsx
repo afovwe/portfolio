@@ -14,7 +14,7 @@ const Hero = () => {
                     I Love Coding
                 </h1>
                 <p className='mt-5 text-base text-white sm:text-xl'>
-                    Turning your vision into a reality. On any screen. Apps that empower, experiences that connect.
+                    Let Me Craft Your Vision. Seamless Experiences that Connect, Across All Screens.
                 </p>
                 <div>
                     <a href="/" title='cv' className='shadow-2xl mr-4 inline-flex items-center px-6 py-4 mt-8 font-semibold text-white bg-primary-color rounded-lg transition-all duration-200 hover:scale-110' role='button'>
@@ -35,7 +35,7 @@ const Hero = () => {
            
         </div>
         <div className='relative bottom-0 z-10  flex mx-auto justify-center gap-20'>
-            <img className='left-[20px] top-[-20px] sm:left-20 sm:top-[-200px] absolute block w-auto h-[150px] sm:h-[500px]' src={notebookL} alt="note book" />
+            <img className='left-[20px] top-[-20px] sm:left-10 sm:top-[-200px] absolute block w-auto h-[150px] sm:h-[500px]' src={notebookL} alt="note book" />
              <img className='absolute sm:relative  w-auto bottom-[-110px] right-[-70px] sm:bottom-0  h-[100px] sm:h-[380px]' src={notebookM} alt="note book" />
             <img className='right-0 sm:bottom-0 absolute block h-auto w-[800px] sm:w-[900px]' src={profilePicture} alt="profilePicture" />
 
