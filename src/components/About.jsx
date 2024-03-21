@@ -4,7 +4,7 @@ import mobile from '../assets/mobileR.png';
 function About() {
   return (
     <div className='pt-16 pb-10 sm:pt-16 sm:pb-16 lg:pb-16'>
-      <div className='py-16 m-6 overflow-hidden md:pt-0 sm:pt-16 2xl:pt-16 relative bg-black/40 max-w-[1000px] mx-auto rounded-xl'>
+      <div className='py-16 m-6 md:pt-0 sm:pt-16 2xl:pt-16 relative bg-black/40 max-w-[1000px] mx-auto rounded-xl'>
         <div className='flex flex-col lg:flex-row'> {/* Maintain flex for layout */}
           <div className='p-7 mx-auto order-1 lg:order-none'> {/* Text content with order */}
             <div>

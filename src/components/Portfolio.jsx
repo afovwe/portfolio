@@ -8,9 +8,9 @@ import { AiFillGithub } from 'react-icons/ai';
 function Portfolio() {
   return (
     
-    <div className=' pt-6 pb-10 sm:pt-16 sm:pb-16 lg:pb-16 h-[92vh]'>
+    <div className=' pt-6 pb-10 sm:pt-16 sm:pb-16 lg:pb-16 md:h-[92vh]'>
       <div className='px-7 mx-auto grid sm:grid-cols-2 gap-6'>
-        <div className='mb-4 flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden shadow-xl z-1 sm:pr-5'>
+        <div className='mb-4 flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 shadow-xl z-1 sm:pr-5'>
           <a href="/" className='group h-48 col-span-3 md:h-80'>
             <img src={proj1} alt="proj1" className='h-full w-full object-cover object-center transittion 
             duration-200 group-hover:scale-110 rounded-lg'/>
