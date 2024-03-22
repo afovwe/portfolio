@@ -5,8 +5,15 @@ import logo from '../assets/logo-transparent4.png';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const handleNav = () => {
+
+  // Function to toggle navigation state and close the mobile menu
+  const toggleNav = () => {
     setNav(!nav);
+  };
+
+  // Function to close mobile menu
+  const closeMobileMenu = () => {
+    setNav(false);
   };
 
   return (
@@ -21,43 +28,42 @@ const Navbar = () => {
         {/* Navigation list on the right */}
         <ul className='text-gray-700 font-medium hidden lg:flex lg:items-center lg:justify-end lg:space-x-10 text-2xl'>
           <li className="p-2">
-            <NavLink to="/" activeClassName="selected">Home</NavLink>
+            <NavLink to="/" activeClassName="selected" onClick={closeMobileMenu}>Home</NavLink>
           </li>
           <li className="p-2">
-            <NavLink to="/about" activeClassName="text-white">About</NavLink>
+            <NavLink to="/about" activeClassName="text-white" onClick={closeMobileMenu}>About</NavLink>
           </li>
           <li className="p-2">
-            <NavLink to="/portfolio" activeClassName="text-white">Portfolio</NavLink>
+            <NavLink to="/portfolio" activeClassName="text-white" onClick={closeMobileMenu}>Portfolio</NavLink>
           </li>
           <li className="p-2">
-            <NavLink to="/contact" activeClassName="text-white">Contact</NavLink>
+            <NavLink to="/contact" activeClassName="text-white" onClick={closeMobileMenu}>Contact</NavLink>
           </li>
         </ul>
 
-        {/* Mobile menu toggle (unchanged) */}
-        <div onClick={handleNav} className='block md:hidden text-white z-40'>
+        {/* Mobile menu toggle */}
+        <div onClick={toggleNav} className='block md:hidden text-white z-40'>
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
 
-        {/* Mobile navigation (unchanged) */}
+        {/* Mobile navigation */}
         <div className={nav ? 'z-30 text-gray-300 fixed h-[50%] left-0 top-0 w-full bg-[#202121] ease-in-out duration-500'
           : 'fixed left-[-100%]'}>
-            <div className='bg-[#ffd700b2]'>
-                        <img className='' src={logo} alt="logo" />
- 
-            </div>
-         <ul className='p-8 text-4xl ml-20'>
+          <div className='bg-[#ffd700b2]'>
+            <img className='' src={logo} alt="logo" />
+          </div>
+          <ul className='p-8 text-4xl ml-20'>
             <li className="p-2">
-              <NavLink to="/" activeClassName="selected">Home</NavLink>
+              <NavLink to="/" activeClassName="selected" onClick={closeMobileMenu}>Home</NavLink>
             </li>
             <li className="p-2">
-              <NavLink to="/about" activeClassName="text-white">About</NavLink>
+              <NavLink to="/about" activeClassName="text-white" onClick={closeMobileMenu}>About</NavLink>
             </li>
             <li className="p-2">
-              <NavLink to="/portfolio" activeClassName="text-white">Portfolio</NavLink>
+              <NavLink to="/portfolio" activeClassName="text-white" onClick={closeMobileMenu}>Portfolio</NavLink>
             </li>
             <li className="p-2">
-              <NavLink to="/contact" activeClassName="text-white">Contact</NavLink>
+              <NavLink to="/contact" activeClassName="text-white" onClick={closeMobileMenu}>Contact</NavLink>
             </li>
           </ul>
         </div>
